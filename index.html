@@ -1,0 +1,115 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Serverless Processor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand"><i class="fas fa-microchip"></i> Serverless Processor</a>
+            <nav class="navbar-nav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#processor" class="nav-link">Processor</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1>Scalable FastAPI Backend on AWS</h1>
+                <p class="tagline">Process your text with a serverless, database-free solution.</p>
+                <a href="#processor" class="btn btn-primary">Try the Processor <i class="fas fa-arrow-down"></i></a>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2>About This Project</h2>
+                <div class="about-grid">
+                    <div class="about-item">
+                        <i class="fas fa-server"></i>
+                        <h3>FastAPI Backend</h3>
+                        <p>Powered by Python FastAPI for high performance and easy API development.</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-cloud"></i>
+                        <h3>AWS Serverless</h3>
+                        <p>Deployed on AWS Lambda and API Gateway for cost-efficiency and automatic scaling.</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-database"></i>
+                        <h3>No Database</h3>
+                        <p>Demonstrates a purely stateless backend, focusing on computation and processing.</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Modern Frontend</h3>
+                        <p>A responsive HTML/CSS/JS frontend to interact with the deployed API.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="processor" class="section processor-section">
+            <div class="container">
+                <h2>Text Processor Demo</h2>
+                <p class="section-description">Enter any text below to see it processed by our FastAPI serverless backend.</p>
+
+                <div class="processor-card">
+                    <div class="form-group">
+                        <label for="textInput">Your Input Text:</label>
+                        <textarea id="textInput" placeholder="Type something here..."></textarea>
+                    </div>
+                    <button id="processBtn" class="btn btn-secondary">Process Text <i class="fas fa-cogs"></i></button>
+
+                    <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i> Processing...
+                    </div>
+
+                    <div id="resultDisplay" class="result-display" style="display: none;">
+                        <h3>Processing Results</h3>
+                        <div class="result-item">
+                            <strong>Original:</strong> <span id="originalText"></span>
+                        </div>
+                        <div class="result-item">
+                            <strong>Processed:</strong> <span id="processedText"></span>
+                        </div>
+                        <div class="result-item">
+                            <strong>Timestamp (UTC):</strong> <span id="timestamp"></span>
+                        </div>
+                        <div class="result-item">
+                            <strong>Processor Info:</strong> <span id="processorInfo"></span>
+                        </div>
+                    </div>
+                    <div id="errorDisplay" class="error-display" style="display: none;">
+                        <h3>Error</h3>
+                        <p id="errorMessage"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Serverless Processor. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
